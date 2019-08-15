@@ -297,7 +297,7 @@ if __name__ == '__main__':
     ##as it's a shell builtin - so manually read them from the text file
     ##TODO add other clusters if we port this elsewhere
     if cluster == 'ozstar':
-        ENV_VARIABLES = '/fred/oz048/MWA/CODE/CHIPS/chips/ozstar_env_variables.sh'
+        ENV_VARIABLES = '/fred/oz048/MWA/CODE/CHIPS/AC_CHIPS_OUT/ozstar_env_variables.sh'
         CODEDIR,OUTPUTDIR,OBSDIR,INPUTDIR,BEAMDIR,PBSDIR,PLOTSDIR = read_env_variables(ENV_VARIABLES)
     else:
         exit('The cluster you have requested is not recognised - please see --cluster help')
